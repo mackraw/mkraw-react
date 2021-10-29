@@ -1,7 +1,9 @@
+import { FaArrowCircleUp } from 'react-icons/fa';
+
 export default function Footer() {
   return (
     <>
-      <button className="backTop hidden">&uparrow;</button>
+      <FaArrowCircleUp className="backTop hidden" />
 
       <footer id="footer">
         <div className="footer__top container">
@@ -30,22 +32,4 @@ export default function Footer() {
       </footer>
     </>
   );
-}
-
-// TODO THIS DOESNT WORK -- FIX IT
-// https://dev.to/n8tb1t/tracking-scroll-position-with-react-hooks-3bbj
-export function handleScroll() {
-  let midScreen = window.screen.availHeight / 2;
-  let bottomThird = (window.screen.availHeight / 3) * 2;
-  const backTop = document.querySelector('.backTop');
-  if (window.scrollY >= midScreen) {
-    console.log(backTop);
-    backTop.classNameList.remove('hidden');
-    backTop.addEventListener('click', () => {
-      window.scroll({ top: 0, behavior: 'smooth' });
-    });
-  }
-  if (window.scrollY < bottomThird) {
-    backTop.classNameList.add('hidden');
-  }
 }

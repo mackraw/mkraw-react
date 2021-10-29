@@ -1,0 +1,74 @@
+/* HERO */
+
+.hero {
+  position: relative;
+  height: 60vh;
+  margin-bottom: 4em;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.hero-subheading {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 1.15rem;
+}
+
+.hero-para {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.btn-cta {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--orange);
+  padding: 1rem 2rem;
+  /* margin: 0 auto; */
+  border: 0.15em solid var(--orange);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  color: var(--orange);
+  border: 0.15em solid var(--orange);
+  box-shadow: inset 0 0 0.5em var(--orange), 0 0 0.5em var(--orange);
+  text-shadow: 0 0 0.125em hsl(0, 0%, 50%), 0 0 0.125em currentColor;
+}
+
+.btn-cta::after {
+  content: '';
+  position: absolute;
+  background-color: var(--orange);
+  top: 150%;
+  left: -2em;
+  right: -2em;
+  height: 0.25em;
+  filter: blur(0.5em);
+  transform: perspective(2em) rotateX(30deg);
+  opacity: 0;
+  transition: all 150ms linear;
+}
+
+.btn-cta:hover::after,
+.btn-cta:focus::after {
+  opacity: 1;
+}

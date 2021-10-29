@@ -1,0 +1,14 @@
+@charset "utf8";
+
+@import url("./base/reset.css");
+@import url("./base/global.css");
+@import url("./abstracts/variables.css");
+@import url("./components/scrollbar.css");
+@import url("./components/backTopBtn.css");
+@import url("./components/nav.css");
+@import url("./components/hero.css");
+@import url("./components/work.css");
+@import url("./components/card.css");
+@import url("./components/about.css");
+@import url("./components/contact.css");
+@import url("./components/footer.css");

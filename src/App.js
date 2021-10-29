@@ -1,15 +1,13 @@
-// import logo from './logo.svg';
-import './App.css';
-import Nav from './Nav';
-import Hero from './Hero';
-import Work from './Work';
-import About from './About';
-import Contact from './Contact';
-import Footer, { handleScroll } from './Footer';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import Work from './components/Work';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App" onScroll={handleScroll}>
+    <div className="App">
       <Nav />
       <Hero />
       <Work />

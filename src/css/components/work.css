@@ -1,0 +1,20 @@
+.work {
+  display: flex;
+  flex-direction: column;
+}
+
+.work::before {
+  content: 'Work';
+  top: -0.25em;
+}
+
+@media screen and (min-width: 420px) {
+
+  .work__header .headingShaddow {
+    transform: rotate(-90deg) translateX(-45%) translateY(-180%);
+  }
+}
+
+#more {
+  margin-top: 3rem;
+}

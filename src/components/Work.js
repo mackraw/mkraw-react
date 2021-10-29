@@ -4,7 +4,6 @@ export default function Work() {
   return (
     <section className="work container" id="work">
       <hgroup className="work__header">
-        <span className="headingShaddow"></span>
         <h3 className="work__heading section-heading" id="sectionHeading">
           Work
         </h3>

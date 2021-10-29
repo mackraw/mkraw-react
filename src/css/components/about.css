@@ -1,0 +1,49 @@
+/* ABOUT */
+
+.picture {
+  max-width: 80%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.about::before {
+  content: 'About';
+  top: -0.66em;
+}
+
+.block-para {
+  line-height: 1.35rem;
+}
+
+
+.about__header .headingShaddow {
+  transform: rotate(-90deg) translateX(-50%) translateY(-150%);
+}
+@media screen and (min-width: 420px) {
+
+  /* ABOUT */
+
+  .picture {
+    max-width: 230px;
+    margin: 3rem auto;
+  }
+
+  .block-para {
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  
+}
+
+@media screen and (min-width: 420px) {
+
+  .about__header .headingShaddow {
+    transform: rotate(-90deg) translateX(-45%) translateY(-210%);
+  }
+
+  
+}
