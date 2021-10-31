@@ -9,8 +9,11 @@ export default function Nav() {
     <nav
       className={navOpen ? 'hero__nav hero-nav-open' : 'hero__nav'}
       id="heroNav">
-      <div className="hero__nav__btn-wrapper" id="btnWrapper">
-        <div className="hero__nav__btn" onClick={toggleNav}></div>
+      <div
+        className="hero__nav__btn-wrapper"
+        id="btnWrapper"
+        onClick={toggleNav}>
+        <div className="hero__nav__btn"></div>
       </div>
 
       <ul className={navOpen ? 'menu menu-open' : 'menu'} id="menu">
