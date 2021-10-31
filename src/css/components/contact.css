@@ -2,7 +2,6 @@
 
 .contact::before {
   content: 'Contact';
-  top: -0.7em;
 }
 
 .form-input {
