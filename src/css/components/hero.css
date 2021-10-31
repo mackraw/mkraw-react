@@ -19,6 +19,7 @@
 .hero-heading {
   font-size: 4rem;
   margin-bottom: 3rem;
+  font-family: CascadiaMono, monospace;
 }
 
 .hero-subheading {
@@ -39,7 +40,6 @@
   text-decoration: none;
   color: var(--orange);
   padding: 1rem 2rem;
-  /* margin: 0 auto; */
   border: 0.15em solid var(--orange);
   border-radius: var(--radius);
   cursor: pointer;
