@@ -8,13 +8,15 @@ export default function About() {
           About
         </h3>
       </hgroup>
-      <img src={pic} alt="Mac Krawczyk" className="picture" />
-      <p className="block-para">
-        Frontend Web Developer with two years of progressive experience using
-        his technical skills to produce stunning and functional websites.
-        Chancellor's Honor Award for exemplary work and a perfect grade-point
-        average.
-      </p>
+      <div className="about-content">
+        <img src={pic} alt="Mac Krawczyk" className="picture" />
+        <p className="block-para">
+          Frontend Web Developer with two years of progressive experience using
+          his technical skills to produce stunning and functional websites.
+          Chancellor's Honor Award for exemplary work and a perfect grade-point
+          average.
+        </p>
+      </div>
     </section>
   );
 }

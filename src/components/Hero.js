@@ -6,7 +6,7 @@ export default function Hero() {
         <h2 className="hero-subheading" id="subheading">
           A Frontend React Developer
         </h2>
-        <p>
+        <p className="hero-para">
           Thanks for taking the time out of your busy
           {setDay()} to check out my work.
         </p>

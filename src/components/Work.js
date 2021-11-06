@@ -11,7 +11,6 @@ export default function Work() {
       <div className="cards">
         <Card />
       </div>
-      <p id="more">More work will appear here soon...</p>
     </section>
   );
 }
