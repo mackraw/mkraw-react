@@ -41,7 +41,7 @@ body {
 .work::before,
 .about::before,
 .contact::before {
-  font-size: clamp(5em, 8vw, 10em);
+  font-size: clamp(5rem, 8vw, 10rem);
   opacity: 0.25;
   position: absolute;
   color: var(--blue);
