@@ -10,7 +10,7 @@
 body {
   line-height: 1;
   font-family: ZenKaku, sans-serif;
-  background: linear-gradient(155deg, var(--lightblue), var(--darkblue));
+  background: linear-gradient(155deg, var(--darkblue), var(--black-blue));
   color: var(--white);
 }
 
@@ -21,8 +21,8 @@ body {
 /* SECTION HEADINGS */
 
 .section-heading {
-  font-size: clamp(2rem, 8vw, 5rem);
-  line-height: 5.75rem;
+  font-size: clamp(4rem, 8vw, 7rem);
+  /* line-height: 5.75rem; */
 }
 
 .section-heading,
@@ -36,7 +36,6 @@ body {
 .about,
 .work {
   position: relative;
-  margin-bottom: 4rem;
 }
 
 .work::before,
@@ -53,8 +52,9 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 10rem auto;
   max-width: 1000px;
+  padding: 0 5%;
 }
 
 @media screen and (min-width: 420px) {

@@ -2,8 +2,9 @@
 
 .hero {
   position: relative;
-  height: 60vh;
-  margin-bottom: 4em;
+  min-height: 60vh;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -13,37 +14,41 @@
 
 .hero-text {
   position: relative;
-  margin-bottom: 2em;
 }
 
+.hero-heading,
+.hero-subheading,
+.hero-para {
+  margin-bottom: 1em;
+
+}
 .hero-heading {
-  font-size: 4rem;
-  margin-bottom: 3rem;
+  font-size: clamp(4rem, 8vw, 8rem);
   font-family: CascadiaMono, monospace;
 }
 
 .hero-subheading {
   display: inline-block;
-  font-size: 1.5rem;
-  margin-bottom: 1.15rem;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .hero-para {
-  font-size: 1rem;
-  margin-bottom: 3rem;
-  line-height: 1.5;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.2;
 }
 
 .btn-cta {
   display: inline-block;
   position: relative;
   text-decoration: none;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   color: var(--orange);
   padding: 1rem 2rem;
   border: 0.15em solid var(--orange);
   border-radius: var(--radius);
   cursor: pointer;
   transition: all 100ms linear;
+  margin: 1em;
 }
 
 .btn-cta:hover,

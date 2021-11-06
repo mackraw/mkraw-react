@@ -9,11 +9,18 @@
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 3rem;
+  padding: 3rem;
+  margin-bottom: 0;
 }
 
 .bottom-nav {
   list-style: none;
+}
+
+.bottom-nav__item {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 1rem;
 }
 
 .bottom-nav__item a {
@@ -21,7 +28,7 @@
   padding: 0.85rem 0;
   text-decoration: none;
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 4vw, 2rem);
   text-align: center;
   transition: all 100ms linear;
 }
@@ -30,9 +37,9 @@
   color: var(--orange);
 }
 
-.call-to-action {
-  padding-top: 2rem;
-  font-size: 1.1rem;
+.call-to-action,
+.call-to-action p {
+  font-size: clamp(1.4rem, 4vw, 2rem);
   text-align: center;
 }
 
@@ -51,7 +58,7 @@
 .footer__notice {
   padding: 2rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
 }
 
 /* FOOTER ABOVE 768px */
@@ -69,6 +76,5 @@
 
   .call-to-action {
     text-align: inherit;
-    padding-top: 1rem;
   }
 }
