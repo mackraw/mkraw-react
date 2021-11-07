@@ -1,4 +1,4 @@
-import { FaArrowCircleUp } from 'react-icons/fa';
+import { FaArrowCircleUp, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -6,27 +6,42 @@ export default function Footer() {
       <FaArrowCircleUp className="backTop hidden" />
 
       <footer id="footer">
-        <div className="footer__top container">
+        <div className="footer-top container">
           <ul className="bottom-nav" id="bottomNav">
-            <li className="bottom-nav__item">
+            <li className="bottom-nav-item">
               <a href="#contact">Contact</a>
             </li>
-            <li className="bottom-nav__item">
+            <li className="bottom-nav-item">
               <a href="#work">Work</a>
             </li>
-            <li className="bottom-nav__item">
+            <li className="bottom-nav-item">
               <a href="#about">About</a>
             </li>
           </ul>
-          <div className="call-to-action">
-            <p>Let's build something great together.</p>
-            <a href="mailto:hi@mkraw.com" className="email-link">
-              hi@mkraw.com
-            </a>
+
+          <div className="social">
+            <span>
+              <a
+                href="https://github.com/mackraw"
+                target="_blank"
+                rel="noreferrer"
+                className="social-link">
+                <FaGithub className="social-link-img" />
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.linkedin.com/in/mac-kraw/"
+                target="_blank"
+                rel="noreferrer"
+                className="social-link">
+                <FaLinkedin className="social-link-img" />
+              </a>
+            </span>
           </div>
         </div>
 
-        <div className="footer__notice">
+        <div className="footer-copy">
           <p>&copy; 2021 Mac Krawczyk</p>
         </div>
       </footer>
