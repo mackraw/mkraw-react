@@ -6,12 +6,12 @@
   border-radius: 1rem;
   background: radial-gradient(ellipse, var(--blueish), var(--blue));
   overflow: hidden;
-  box-shadow: 0 0.5rem 1rem hsla(240, 30%, 30%, 0.25); 
+  box-shadow: 0 0.5rem 1rem hsla(30, 30%, 30%, 0.25); 
   transition: all 250ms ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 1rem 2rem hsla(240, 60%, 60%, 0.5);
+  box-shadow: 0 1rem 2rem hsla(30, 60%, 60%, 0.5);
 }
 
 .card-img-container {
