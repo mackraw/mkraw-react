@@ -1,25 +1,7 @@
-/* FORM */
+/* CONTACT */
 
 .contact::before {
   content: 'Contact';
-}
-
-.form-input {
-  background-color: var(--white);
-  border: none;
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 0.25em;
-  display: inline-block;
-  border: 0.25em solid transparent;
-  font-size: clamp(1.4rem, 4vw, 2rem);
-  font-family: ZenKaku;
-}
-
-.form-input:focus,
-.form-input:active {
-  box-shadow: 0 0 0.25em var(--orange);
-  border: 0.25em solid var(--orange);
 }
 
 .contact-content {
@@ -28,59 +10,28 @@
   margin: 0 auto;
 }
 
-.contact-form,
 .email-sec {
-  margin: 0 auto;
+  margin: 8rem auto 0;
 }
 
-.contact-form::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
-.form__item {
-  margin: 1rem 0;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.form__item label {
-  margin: 0.7rem 0 0.4rem;
-  font-size: clamp(1.4rem, 4vw, 2rem);
-}
-
-.form__submit-btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  font-family: inherit;
-  border: 2px solid var(--white);
-  border-radius: var(--radius);
-  margin: 1rem 0;
-  background-color: transparent;
-  color: var(--white);
-  font-size: clamp(1.4rem, 4vw, 2rem);
-  float: right;
-  transition: all 100ms linear;
-  cursor: pointer;
-}
-
-.form__submit-btn:hover {
-  border-color: var(--orange);
-  color: var(--orange);
-}
-
-.email-sec p {
+.email-sec p,
+.email-link {
   font-size: clamp(1.4rem, 4vw, 2rem);
   text-align: center;
 }
 
-.contact__header .headingShaddow {
-  transform: rotate(-90deg) translateX(-50%) translateY(-210%);
+.email-link {
+  display: block;
+  color: var(--orange);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  transition: all .1s linear;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  width: max-content;
+  margin: 1rem auto;
 }
 
-@media screen and (min-width: 420px) {
-  .contact__header .headingShaddow {
-    transform: rotate(-90deg) translateX(-45%) translateY(-260%);
-  }
+.email-link:hover {
+  border-bottom: 2px solid var(--orange);
 }
