@@ -6,29 +6,24 @@ export default function Nav() {
   const toggleNav = () => setNavOpen(!navOpen);
 
   return (
-    <nav
-      className={navOpen ? 'hero__nav hero-nav-open' : 'hero__nav'}
-      id="heroNav">
-      <div
-        className="hero__nav__btn-wrapper"
-        id="btnWrapper"
-        onClick={toggleNav}>
-        <div className="hero__nav__btn"></div>
+    <nav className={navOpen ? 'nav is-open' : 'nav'} id="heroNav">
+      <div className="btn-wrapper" id="btnWrapper" onClick={toggleNav}>
+        <div className="nav--btn"></div>
       </div>
 
-      <ul className={navOpen ? 'menu menu-open' : 'menu'} id="menu">
-        <li className="menu__item">
-          <a href="#contact" className="menu__link">
+      <ul className={navOpen ? 'menu is-open' : 'menu'} id="menu">
+        <li className="menu--item">
+          <a href="#contact" className="menu--link">
             Contact
           </a>
         </li>
-        <li className="menu__item">
-          <a href="#work" className="menu__link">
+        <li className="menu--item">
+          <a href="#work" className="menu--link">
             Work
           </a>
         </li>
-        <li className="menu__item">
-          <a href="#about" className="menu__link">
+        <li className="menu--item">
+          <a href="#about" className="menu--link">
             About
           </a>
         </li>
