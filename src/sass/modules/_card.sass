@@ -1,0 +1,61 @@
+.card 
+  margin: 0 auto 
+  max-width: 400px 
+  border-radius: 1rem 
+  background: radial-gradient(ellipse, $blueish, $blue) 
+  overflow: hidden 
+  box-shadow: 0 0.5rem 1rem hsla(30, 30%, 30%, 0.25) 
+  transition: all 250ms ease-in-out 
+  &:hover 
+    box-shadow: 0 1rem 2rem hsla(30, 60%, 60%, 0.5) 
+    .card-image 
+      transform: scale(1.05) rotate(-1deg) 
+    .card-icon 
+      filter: grayscale(0%) 
+  &--img-container 
+    overflow: hidden 
+    border-radius: $radius 
+  &--info 
+    padding: 0 1.5rem 
+  &--image 
+    width: 100% 
+    transition: all 250ms ease-in-out 
+  &--title 
+    margin: 1.5rem auto 
+    font-size: clamp(2rem, 5vw, 2.5rem) 
+    font-family: CascadiaMono, monospace 
+  &--links 
+    margin: 1.5rem auto 
+    text-align: center 
+  &--link 
+    display: inline-block 
+    color: $white 
+    margin: 0 10% 0 0.5em 
+    text-decoration: none 
+    font-size: 1.5em 
+    border-bottom: 1px solid $white 
+    transition: all 250ms ease-in-out 
+    &:visited 
+      color: $white 
+      border-bottom: 1px solid $white 
+    &:hover 
+      color: $orange 
+      border-bottom: 1px solid $orange 
+    &:target 
+      color: $orange 
+      border-bottom: 1px solid $orange 
+  &--desc 
+    font-size: clamp(1.4rem, 3vw, 1.6rem) 
+    margin: 1.5rem auto 
+    line-height: 1.25 
+  &--icons 
+    text-align: center 
+    margin: 0.5rem 
+  &--icon 
+    display: inline-block 
+    width: 1.5rem 
+    height: 1.5rem 
+    margin: 0.5rem 
+    filter: grayscale(90%) 
+    transition: all 250ms ease-in-out 
+

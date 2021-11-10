@@ -1,0 +1,59 @@
+.hero 
+  position: relative 
+  min-height: 60vh 
+  margin-top: 10rem 
+  margin-bottom: 10rem 
+  text-align: center 
+  display: flex 
+  flex-flow: column 
+  justify-content: center 
+  align-items: center 
+  &--text 
+    position: relative 
+  &--heading,
+  &--subheading,
+  &--para 
+    margin-bottom: 1em 
+  &--heading 
+    font-size: clamp(4rem, 8vw, 8rem) 
+    font-family: CascadiaMono, monospace 
+  &--subheading 
+    display: inline-block 
+    font-size: clamp(2rem, 5vw, 4rem) 
+  &--para 
+    font-size: clamp(1.4rem, 3vw, 2rem) 
+    line-height: 1.2 
+
+.btn-cta 
+  display: inline-block 
+  position: relative 
+  text-decoration: none 
+  font-size: clamp(1.4rem, 3vw, 2rem) 
+  color: $orange 
+  padding: 1rem 2rem 
+  border: 0.15em solid $orange 
+  border-radius: $radius 
+  cursor: pointer 
+  transition: all 100ms linear 
+  margin: 1em 
+  &::after 
+    content: '' 
+    position: absolute 
+    background-color: $orange 
+    top: 150% 
+    left: -2em 
+    right: -2em 
+    height: 0.25em 
+    filter: blur(0.5em) 
+    transform: perspective(2em) rotateX(30deg) 
+    opacity: 0 
+    transition: all 150ms linear 
+  &:hover,
+  &:focus 
+    color: $orange 
+    border: 0.15em solid $orange 
+    box-shadow: inset 0 0 0.5em $orange, 0 0 0.5em $orange 
+    text-shadow: 0 0 0.125em hsl(0, 0%, 50%), 0 0 0.125em currentColor 
+    &::after,
+    &::after 
+      opacity: 1 

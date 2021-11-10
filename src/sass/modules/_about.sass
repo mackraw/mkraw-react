@@ -1,0 +1,25 @@
+.about 
+  &--content
+    @media (min-width: 1024px) 
+      max-width: 90% 
+      margin: 4rem auto 
+      display: flex 
+      justify-content: space-around
+  &::before 
+    content: 'About' 
+  &--picture 
+    width: 80% 
+    max-width: 230px 
+    height: auto 
+    margin: 4rem auto 
+    border-radius: 50% 
+    display: block 
+  &--para 
+    line-height: 1.35 
+    text-align: center 
+    font-size: clamp(1.4rem, 4vw, 2rem) 
+    max-width: 60ch 
+    margin: 2rem auto 
+    margin: 6rem 
+    text-align: start 
+
