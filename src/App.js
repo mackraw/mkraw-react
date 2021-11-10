@@ -7,14 +7,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Nav />
       <Hero />
       <Work />
       <About />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 
