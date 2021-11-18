@@ -7,8 +7,12 @@ export default function Nav() {
 
   return (
     <nav className={navOpen ? 'nav is-open' : 'nav'} id="heroNav">
-      <div className="btn-wrapper" id="btnWrapper" onClick={toggleNav}>
-        <div className="nav--btn"></div>
+      <div
+        className="btn-wrapper"
+        id="btnWrapper"
+        onClick={toggleNav}
+        aria-hidden="true">
+        <div className="nav--btn" />
       </div>
 
       <ul className={navOpen ? 'menu is-open' : 'menu'} id="menu">

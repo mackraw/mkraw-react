@@ -1,8 +1,8 @@
 import { FaCode, FaRegWindowMaximize } from 'react-icons/fa';
-import html5Icon from './../assets/images/html5.svg';
-import css3Icon from './../assets/images/css3.svg';
-import jsIcon from './../assets/images/js.svg';
-import restaurantImage from './../assets/images/RestauranteItalia.png';
+import html5Icon from '../assets/images/html5.svg';
+import css3Icon from '../assets/images/css3.svg';
+import jsIcon from '../assets/images/js.svg';
+import restaurantImage from '../assets/images/RestauranteItalia.png';
 
 export default function Card() {
   return (
