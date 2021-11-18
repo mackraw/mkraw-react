@@ -5,7 +5,7 @@
   background: radial-gradient(ellipse, $blueish, $blue)
   overflow: hidden
   box-shadow: 0 0.5rem 1rem hsla(30, 30%, 30%, 0.25)
-  transition: all 250ms ease-in-out
+  @include transition-medium
   &:hover
     box-shadow: 0 1rem 2rem hsla(30, 60%, 60%, 0.5)
     .card--image
@@ -19,7 +19,7 @@
     padding: 0 1.5rem
   &--image
     width: 100%
-    transition: all 250ms ease-in-out
+    @include transition-medium
   &--title
     margin: 1.5rem auto
     font-size: clamp(2rem, 5vw, 2.5rem)
@@ -34,7 +34,7 @@
     text-decoration: none
     font-size: 1.5em
     border-bottom: 1px solid $white
-    transition: all 250ms ease-in-out
+    @include transition-medium
     &:visited
       color: $white
       border-bottom: 1px solid $white
@@ -57,4 +57,4 @@
     height: 1.5rem
     margin: 0.5rem
     filter: grayscale(90%)
-    transition: all 250ms ease-in-out
+    @include transition-medium
