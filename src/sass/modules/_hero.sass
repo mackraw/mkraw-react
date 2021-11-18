@@ -1,63 +1,63 @@
-.hero 
-  position: relative 
-  min-height: 60vh 
-  margin-top: 10rem 
-  margin-bottom: 10rem 
-  text-align: center 
-  display: flex 
-  flex-flow: column 
-  justify-content: center 
-  align-items: center 
-  &--text 
-    position: relative 
+.hero
+  position: relative
+  min-height: 60vh
+  margin-top: 10rem
+  margin-bottom: 10rem
+  text-align: center
+  display: flex
+  flex-flow: column
+  justify-content: center
+  align-items: center
+  &--text
+    position: relative
   &--heading,
   &--subheading,
-  &--para 
-    margin-bottom: 4rem 
-  &--heading 
-    font-size: clamp(4rem, 8vw, 8rem) 
-    font-family: CascadiaMono, monospace 
+  &--para
+    margin-bottom: 4rem
+  &--heading
+    font-size: clamp(4rem, 8vw, 8rem)
+    font-family: CascadiaMono, monospace
     font-weight: 600
-  &--subheading 
-    display: inline-block 
-    font-size: clamp(1.7rem, 3.6vw, 4rem) 
-  &--para 
-    font-size: clamp(1.3rem, 2.7vw, 2rem) 
-    line-height: 1.2 
+  &--subheading
+    display: inline-block
+    font-size: clamp(1.7rem, 3.6vw, 4rem)
+  &--para
+    font-size: clamp(1.3rem, 2.7vw, 2rem)
+    line-height: 1.2
 
-.btn-cta 
-  display: inline-block 
-  position: relative 
-  text-decoration: none 
-  font-size: clamp(1.4rem, 3vw, 2rem) 
-  color: $orange 
-  padding: 1rem 2rem 
-  border: 0.15em solid $orange 
-  border-radius: $radius 
-  cursor: pointer 
-  transition: all 100ms linear 
-  margin: 1em 
-  &::after 
-    content: '' 
-    position: absolute 
-    background-color: $orange 
-    top: 150% 
-    left: -2em 
-    right: -2em 
-    height: 0.25em 
-    filter: blur(0.5em) 
-    transform: perspective(2em) rotateX(30deg) 
-    opacity: 0 
-    transition: all 150ms linear 
+.btn-cta
+  display: inline-block
+  position: relative
+  text-decoration: none
+  font-size: clamp(1.4rem, 3vw, 2rem)
+  color: $orange
+  padding: 1rem 2rem
+  border: 0.15em solid $orange
+  border-radius: $radius
+  cursor: pointer
+  transition: all 100ms linear
+  margin: 1em
+  &::after
+    content: ''
+    position: absolute
+    background-color: $orange
+    top: 150%
+    left: -2em
+    right: -2em
+    height: 0.25em
+    filter: blur(0.5em)
+    transform: perspective(2em) rotateX(30deg)
+    opacity: 0
+    transition: all 150ms linear
   &:hover,
-  &:focus 
-    color: $orange 
-    border: 0.15em solid $orange 
-    box-shadow: inset 0 0 0.5em $orange, 0 0 0.5em $orange 
-    text-shadow: 0 0 0.125em hsl(0, 0%, 50%), 0 0 0.125em currentColor 
+  &:focus
+    color: $orange
+    border: 0.15em solid $orange
+    box-shadow: inset 0 0 0.5em $orange, 0 0 0.5em $orange
+    text-shadow: 0 0 0.125em hsl(0, 0%, 50%), 0 0 0.125em currentColor
     &::after,
-    &::after 
-      opacity: 1 
+    &::after
+      opacity: 1
 
 .circle
   position: absolute
@@ -69,22 +69,20 @@
   height: auto
   top: -33vh
   left: -33vw
-  animation: glide 33s alternate-reverse infinite linear
+  animation: glide 21s alternate-reverse infinite linear
 .circle2
   @extend .circle
   max-width: 10em
   bottom: 0
   right: 0
-  animation: glide-alt 21s alternate-reverse infinite linear
+  animation: glide-alt 13s alternate-reverse infinite linear
 @keyframes glide
-  from 
+  from
     transform: translateY(0) rotate(0)
-  to 
+  to
     transform: translateY(2em) rotate(25deg)
 @keyframes glide-alt
-  from 
+  from
     transform: translateY(0) rotate(0)
-  to 
+  to
     transform: translateY(4em) rotate(-45deg)
-
-
