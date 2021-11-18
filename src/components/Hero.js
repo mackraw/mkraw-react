@@ -1,3 +1,19 @@
+import Circle from '../assets/images/circle.svg';
+
+function setDay() {
+  const weekdays = [
+    ' Sunday',
+    ' Monday',
+    ' Tuesday',
+    ' Wednesday',
+    ' Thursday',
+    ' Friday',
+    ' Saturday',
+  ];
+  const today = new Date();
+  return weekdays[today.getDay()];
+}
+
 export default function Hero() {
   return (
     <section className="hero container">
@@ -14,20 +30,8 @@ export default function Hero() {
       <a href="#work" className="btn-cta">
         See My Work
       </a>
+      <img src={Circle} className="circle circle1" alt="Circle" />
+      <img src={Circle} className="circle circle2" alt="Circle" />
     </section>
   );
-}
-
-function setDay() {
-  const weekdays = [
-    ' Sunday',
-    ' Monday',
-    ' Tuesday',
-    ' Wednesday',
-    ' Thursday',
-    ' Friday',
-    ' Saturday',
-  ];
-  const today = new Date();
-  return weekdays[today.getDay()];
 }
