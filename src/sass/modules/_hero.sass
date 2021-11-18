@@ -13,15 +13,16 @@
   &--heading,
   &--subheading,
   &--para 
-    margin-bottom: 1em 
+    margin-bottom: 4rem 
   &--heading 
     font-size: clamp(4rem, 8vw, 8rem) 
     font-family: CascadiaMono, monospace 
+    font-weight: 600
   &--subheading 
     display: inline-block 
-    font-size: clamp(2rem, 5vw, 4rem) 
+    font-size: clamp(1.7rem, 3.6vw, 4rem) 
   &--para 
-    font-size: clamp(1.4rem, 3vw, 2rem) 
+    font-size: clamp(1.3rem, 2.7vw, 2rem) 
     line-height: 1.2 
 
 .btn-cta 
@@ -57,3 +58,33 @@
     &::after,
     &::after 
       opacity: 1 
+
+.circle
+  position: absolute
+  overflow-x: hidden
+
+.circle1
+  @extend .circle
+  width: 90vh
+  height: auto
+  top: -33vh
+  left: -33vw
+  animation: glide 33s alternate-reverse infinite linear
+.circle2
+  @extend .circle
+  max-width: 10em
+  bottom: 0
+  right: 0
+  animation: glide-alt 21s alternate-reverse infinite linear
+@keyframes glide
+  from 
+    transform: translateY(0) rotate(0)
+  to 
+    transform: translateY(2em) rotate(25deg)
+@keyframes glide-alt
+  from 
+    transform: translateY(0) rotate(0)
+  to 
+    transform: translateY(4em) rotate(-45deg)
+
+
