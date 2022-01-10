@@ -1,4 +1,4 @@
-import Card from './Card';
+import Cards from './Cards';
 
 export default function Work() {
   return (
@@ -8,9 +8,7 @@ export default function Work() {
           Work
         </h3>
       </hgroup>
-      <div className="cards">
-        <Card />
-      </div>
+      <Cards />
     </section>
   );
 }
