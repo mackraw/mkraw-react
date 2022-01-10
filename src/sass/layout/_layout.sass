@@ -1,31 +1,30 @@
 .cards
   padding: 4rem
-  @media (min-width: 768px) 
-    display: grid 
-    grid-template-columns: 1fr 1fr 
-    grid-gap: 2rem 
+  @media (min-width: 768px)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 2rem
 
-.work, 
+.work,
 .about,
 .contact
-  position: relative 
-  @media (min-width: 420px) 
-    margin-bottom: 4rem 
+  position: relative
+  @media (min-width: 420px)
+    margin-bottom: 4rem
 
 .work::before,
 .about::before,
-.contact::before 
-  font-size: clamp(5rem, 8vw, 10rem) 
-  opacity: 0.25 
-  position: absolute 
-  color: $blue 
-  display: inline-block 
-  z-index: -1 
-  right: 0 
-  top: 0 
+.contact::before
+  font-size: clamp(5rem, 8vw, 10rem)
+  opacity: 0.25
+  position: absolute
+  color: $blue
+  display: inline-block
+  z-index: -1
+  right: 0
+  top: 0
 
-.container 
-  margin: 0 auto 10rem auto 
-  max-width: 1000px 
-  padding: 0 5% 
-
+.container
+  margin: 0 auto 10rem auto
+  max-width: 1000px
+  padding: 0 5%
