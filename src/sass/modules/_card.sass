@@ -1,5 +1,5 @@
 .card
-  margin: 0 auto
+  margin: 0 auto 2rem auto
   max-width: 400px
   border-radius: 1rem
   background: radial-gradient(ellipse, $blueish, $blue)
@@ -7,7 +7,8 @@
   box-shadow: 0 0.5rem 1rem hsla(30, 30%, 30%, 0.25)
   @include transition-medium
   &:hover
-    box-shadow: 0 1rem 2rem hsla(30, 60%, 60%, 0.5)
+    box-shadow: 0 0 2rem 1rem hsla(30, 60%, 60%, 0.5)
+    transform: scale(1.1)
     .card--image
       transform: scale(1.05) rotate(-1deg)
     .card--icon
@@ -21,33 +22,45 @@
     width: 100%
     @include transition-medium
   &--title
-    margin: 1.5rem auto
+    margin: 2.5rem auto
     font-size: clamp(2rem, 5vw, 2.5rem)
     font-family: CascadiaMono, monospace
+    text-align: center
+    &--link
+      color: $white
+      text-decoration: none
+      &:visited
+        color: $white
+      &:hover
+        color: $white
+      &:target
+        color: $white
   &--links
-    margin: 1.5rem auto
+    margin: 3.5em auto
     text-align: center
   &--link
     display: inline-block
-    color: $white
-    margin: 0 10% 0 0.5em
-    text-decoration: none
-    font-size: 1.5em
-    border-bottom: 1px solid $white
+    margin: 0 2em
     @include transition-medium
-    &:visited
+    &--text
+      text-decoration: none
+      font-size: 1.5em
       color: $white
+      margin-left: 0.5em
       border-bottom: 1px solid $white
-    &:hover
-      color: $orange
-      border-bottom: 1px solid $orange
-    &:target
-      color: $orange
-      border-bottom: 1px solid $orange
+      &:visited
+        color: $white
+        border-bottom: 1px solid $white
+      &:hover
+        color: $orange
+        border-bottom: 1px solid $orange
+      &:target
+        color: $orange
+        border-bottom: 1px solid $orange
   &--desc
     font-size: clamp(1.3rem, 2.7vw, 1.6rem)
     margin: 1.5rem auto
-    line-height: 1.35
+    line-height: 1.5
   &--icons
     text-align: center
     margin: 0.5rem
